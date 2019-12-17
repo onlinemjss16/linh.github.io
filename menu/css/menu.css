@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+nav{
+    /* margin-left: 500px; */
+    background-color: turquoise;
+    width: 200px;
+}
+nav ul.menu {
+    background-color: pink;
+    width: 200px; 
+}
+nav ul.menu li {
+    list-style: none;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+nav ul.menu li a {
+    text-decoration: none;
+}
+nav ul.menu li:hover > a{
+    color: tomato;
+}
+nav ul.menu li:hover{
+    background-color: violet;
+    cursor: pointer;
+}
+/* menuc2 */
+nav ul.menu ul.menuc2, nav ul.menu ul.menuc2 ul.menuc3 {   
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    background-color: pink;
+    width: 200px;
+    
+}
+/* hiện menu2 */
+nav ul.menu li:hover ul.menuc2{
+    display: block;
+}
+/* hiện muc3 */
+nav ul.menu li:hover ul.menuc2 li:hover ul.menuc3 {
+    display: block;
+}
